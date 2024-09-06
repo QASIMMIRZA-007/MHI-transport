@@ -6,7 +6,7 @@ export { default as synergy } from './projectSvgs/Synergy.svg';
 export { default as eye } from './projectSvgs/eyeVector.svg';
 export { default as Reliability } from './projectSvgs/Reliability.svg';
 export { default as FBrokerage } from './projectSvgs/fBrokerage.svg';
-export { default as FDispatch } from './projectSvgs/FDispatch.svg';
+export { default as FDispatch } from './projectSvgs/fDispatch.svg';
 export { default as lineVector } from './projectSvgs/lineVector.svg';
 export { default as dispatcherImg } from './projectSvgs/dispatcherImg.svg';
 export { default as reefer } from './projectSvgs/reefer.svg';
