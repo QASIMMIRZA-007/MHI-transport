@@ -18,15 +18,15 @@ function App() {
     <>
       <Header isNav={isNav} setIsNav={setIsNav} />
       <div className="appWrapper">
-        {/* <Home /> */}
-        {/* <About />
+        <Home />
+        <About />
         <CardRow />
         <Services />
         <Equipments />
         <Questions />
-        <Form /> */}
+        <Form />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
