@@ -1,0 +1,35 @@
+@import '../../Styles/variables';
+.EquipmentsWrapper{
+    .EquipmentsWrapp{
+        .minispan{
+            text-align: center;
+        }
+        h1{
+            // width: 60%;
+            color: $primary;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+
+        }
+        .para{
+            
+            width: 55%;
+            margin-inline: auto;
+       text-align: center;
+            font-size: 16px;
+            color: $textColor;
+          
+        }
+        .cardsWrapper{
+            display: flex;
+            // align-items: center;
+            gap: 50px;
+            // margin-top: 50px;
+            padding-top: 50px;
+            // border: 1px solid #000;
+        }
+
+    }
+
+}

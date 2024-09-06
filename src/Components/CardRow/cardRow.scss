@@ -1,0 +1,11 @@
+.cardRowWrapper{
+    .cardRowWrapp{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-content: center;
+        gap: 30px;
+   
+        width: 100%;
+     
+    }
+}

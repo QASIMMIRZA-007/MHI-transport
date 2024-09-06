@@ -1,0 +1,74 @@
+@import "../../Styles/common";
+@import "../../Styles/variables.scss";
+.footerWrapper {
+  background: $primary;
+  margin-top: 120px;
+  .footerWrap {
+    width: 90%;
+    margin: 0 auto;
+    .mainColWrapper {
+      .colWrapper {
+        
+        padding: 30px 0 50px 0;
+        .colWrap {
+        
+          .iconsWrapp{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+       
+          p {
+            font-size: 16px;
+            font-weight: 300;
+            color: #fff;
+            padding: 20px 0px 20px 0;
+        font-family: $poppin;
+            width: 90%;
+            @media screen and (max-width: 768px) {
+              width: 90%;
+            }
+            @media screen and (min-width: 769px) and (max-width: 992px) {
+              width: 90%;
+            }
+          }
+          ul {
+            margin-top: 20px;
+          
+          
+            li {
+              list-style: none;
+              font-family: $poppin;
+              font-size: 18px;
+              font-weight: 300;
+              margin-bottom: 10px;
+              color:#fff;
+              
+           
+              transition:transform 0.6s ease-in;
+              cursor: pointer;
+              &:hover {
+                transform: translateX(10px);
+              }
+
+             
+            }
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+.ant-col {
+  display: flex;
+  // align-items: center;
+  justify-content: flex-end;
+  @media screen and (max-width: 768px) {
+    justify-content: start;
+  }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    justify-content: start;
+  }
+}

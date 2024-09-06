@@ -1,0 +1,190 @@
+@import '../../Styles/common';
+@import '../../Styles/variables';
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  position: relative;
+  z-index: 999;
+  padding: 15px 5%;
+
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
+  @media screen and (max-width:768px) {
+    padding: 17px 20px;
+    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-menu {
+    @media screen and (max-width:768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logo {
+      cursor: pointer;
+
+      svg {
+        display: block;
+      }
+    }
+
+    .menu,
+    .change {
+      cursor: pointer;
+      display: none;
+
+       @media screen and (max-width:768px) {
+        display: inline-block;
+      }
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: $black;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    }
+
+    .change {
+      .bar1 {
+        transform: translate(0, 11px) rotate(225deg);
+      }
+
+      .bar2 {
+        opacity: 0;
+      }
+
+      .bar3 {
+        transform: translate(0, -11px) rotate(-225deg);
+      }
+    }
+  }
+
+  .list-button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    // width: 42%;
+    justify-content: end;
+
+     @media screen and (max-width:768px) {
+      transform: translateY(-1000px);
+      position: absolute;
+      flex-direction: column;
+    }
+
+    .nav-group {
+
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+       
+
+        li {
+          list-style: none;
+          font-size: 16px;
+          font-weight: 400;
+          color: $textColor;
+          cursor: pointer;
+
+          a {
+
+            cursor: pointer;
+
+
+          }
+
+          span {
+            font-weight: 700;
+            //   color: $secondaryColor;
+          }
+        }
+      }
+    }
+
+    .button {
+      // width: 28%;
+
+    }
+
+    .buttonFlex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 30%;
+      padding: 9px 5px !important;
+
+      .arrowNextBtn {
+        font-size: 23px;
+        background: aliceblue;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .open {
+    display: block;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // gap: 35px;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 72px;
+    width: 100%;
+    background-color: rgba(242, 250, 249, 1);
+    // padding: $spacing-md;
+    // box-shadow: $shadow;
+    // border-radius: $radius;
+    transform: translateY(-0px);
+    transition: transform 300ms ease-in-out;
+
+    // transition-duration: 1s;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      // align-items: center;
+      //   gap: $spacing-md;
+      padding: 30px 5%;
+      width: 50%;
+
+      li {
+        list-style: none;
+        // color: $primaryColor;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+
+        span {
+          font-weight: 700;
+          //   color: $tertiaryColor;
+        }
+      }
+    }
+
+    .button {
+      width: 70%;
+    }
+  }
+}

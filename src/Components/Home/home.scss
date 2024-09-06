@@ -1,0 +1,54 @@
+@import '../../Styles/variables';
+@import '../../Styles/common';
+
+.homeWrapper {
+    display: flex;
+   
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+    }
+
+  
+    .textWrapp {
+        padding: 70px 0 ;
+        h1 {
+            font-weight: bold;
+            font-size: 48px;
+            color: $primary;
+            margin-bottom: 10px;
+            width: 40%;
+            @media screen and (max-width:768px) {
+               width: 100%;
+               font-size: 32px;
+            }
+        }
+
+        p {
+            color: $textColor;
+            font-size: 24px;
+            margin-bottom: 50px;
+            width: 35%;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                font-size: 18px;
+             }
+        }
+    }
+    .imgWrapp {
+        position: absolute;
+        right: 0px;
+        height: 100%;
+        height: 620px;
+        img {
+            height: 100%;
+           
+             @media screen and (max-width:768px) {
+                width: 100%;
+            }
+        }
+    }
+    
+
+}
+
+

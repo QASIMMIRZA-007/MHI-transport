@@ -1,0 +1,76 @@
+@import '../../Styles/variables';
+
+.servicesWrapper{
+    margin: 100px 0;
+    .servicesWrapp{
+        .minispan{
+            text-align: center;
+        }
+        h1{
+            color: $primary;
+            text-align: center;
+            font-size: 36px;
+
+        }
+        .cardWrapper{
+            width: 90%;
+            margin-inline: auto;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            gap: 80px;
+            margin: 40px 0 100px 0;
+        .card{
+       
+            display: flex;
+            align-items: center;
+            padding: 30px 20px;
+            gap: 10px;
+            background: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 15px;
+            width: 400px;
+            h2{
+                color: $textColor;
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+                color: $textColor;
+            }
+        }
+    }
+    .dispatcherWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        .dispatcherTextWrapper{
+            // width: 40%;
+            .minispan{
+                text-align: left;
+            }
+            h1{
+                width: 60%;
+                color: $primary;
+                text-align: left;
+                font-size: 36px;
+                margin-bottom: 20px;
+    
+            }
+            p{
+                width: 65%;
+                font-size: 16px;
+                color: $textColor;
+            }
+        }
+        .dispatcherImgWrapper{
+svg{
+    display: block;
+}
+        }
+    }
+
+
+    }
+}
