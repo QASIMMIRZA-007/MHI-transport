@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./form.scss";
 import { ReactSVG } from "react-svg";
 import { clockVec, emailVec, phoneVector } from "../../assets/Index";
-import { Input, message } from "antd";
+import { Checkbox, Input, message } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import PrimaryButton from "../../UI/PrimaryButton/PrimaryButton";
-const Form = () => {
+const Form = ({ conditionShown }) => {
   const [formData, setFormData] = useState({
     firstName: "",
     phoneNumber: "",
@@ -83,6 +83,10 @@ const Form = () => {
     }
   };
 
+  const handleCheckBoxChange = (e) => {
+    console.log(`checked = ${e.target.checked}`);
+  };
+
   return (
     <div className="formWrapper">
       <div className="formWrapp">
@@ -133,8 +137,46 @@ const Form = () => {
             maxLength={500}
           />
           {errors.message && <p className="error">{errors.message}</p>}
+          {conditionShown && (
+            <div className="conditionsWrapper">
+              <p>
+                By checking the box, you are providing your express consent for{" "}
+                <b>  SWIFT DISPATCH SERVICES </b> to send you communications,
+                including but not limited to text messages and email, to the
+                contact details you have provided. These communications may
+                include updates, promotional offers, and other information
+                related to our products or services
+              </p>
+              <div className="flex">
+                <Checkbox onChange={handleCheckBoxChange} />
+                <p>
+                  <b>
+                    Yes, I agree to receive emails from SWIFT DISPATCH SERVICES.
+                  </b>
+                </p>
+              </div>
+              <p>
+                By providing your phone number, you consent to receive SMS
+                messages from <b> SWIFT DISPATCH SERVICES </b>  and its
+                employees for informational and marketing purposes. Message
+                frequency may vary. Standard message and data rates may apply.
+                Reply 
+                <b> "STOP" </b> to unsubscribe
+              </p>
+              <div className="flex">
+                <Checkbox onChange={handleCheckBoxChange} />
+                <p>
+                  <b>
+                    Yes, I agree to receive text messages from SWIFT DISPATCH
+                    SERVICES.
+                  </b>
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
+
       <button className="button" onSubmit={handleSubmit}>
         Submit
       </button>

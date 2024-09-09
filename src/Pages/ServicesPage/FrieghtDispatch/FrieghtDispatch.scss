@@ -1,0 +1,158 @@
+@import '../../../Styles/variables';
+
+.FrieghtDispatchWrapper {
+    .FrieghtDispatchWrapp {
+        margin-top: 50px;
+        width: 90%;
+        
+        margin-inline: auto;
+     
+        .workflowWrapper {
+            .workflowWrapp {
+                margin-top: 100px;
+                h1 {
+                    font-size: 40px;
+                    color: $primary;
+                    text-align: center;
+                    margin-bottom: 10px;
+
+                }
+
+                .para {
+                    text-align: center;
+                    font-size: 16px;
+                    color: $textColor;
+                    width: 65%;
+                    margin-inline: auto;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                     
+                    }
+                    @media screen and (min-width:769px) and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+                .stepWrapp{
+                    margin-top: 40px;
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    grid-gap: 30px;
+                    @media screen and (max-width:768px) {
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-gap: 50px;
+                     
+                    }
+            
+                    @media screen and (min-width:769px) and (max-width:992px) {
+                        grid-template-columns:  repeat(2, 1fr);
+                        grid-gap: 50px;
+                    }
+                   
+                    .step{
+                        width: 200px;
+                        // padding: 0 20px 0 0px;   
+                        @media screen and (max-width:768px) {
+                            width: auto;
+                            padding: 0;
+
+                         
+                        }
+                        @media screen and (min-width:769px) and (max-width:992px) {
+                            width: auto;
+                        }
+                     
+
+                        .circle{
+                            position: relative;
+                            // top: 0%;
+                            left: 50%;
+                            bottom: 0;
+                            transform: translate(-50%, -30%);
+                            height: 56px;
+                            width: 56px;
+                            border-radius: 50%;
+                            background: $primary;
+                           
+                            h1{
+                                position: relative;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                color: #fff;
+                                font-size: 32px;
+                            font-weight: 600;
+                           
+                            }
+                        }
+                        h2{
+
+                            font-size: 24px;
+                            color: $primary;
+                            text-align: center;
+                            margin-bottom: 8px;
+                        }
+                        p{
+                            // text-align: center;
+                            font-size: 14px;
+                            color: $textColor;  
+                        }
+                    }
+                }
+            }
+        }
+        .exServicesWrapper{
+            .exServicesWrapp{
+                margin-top: 100px;
+                h1 {
+                    font-size: 40px;
+                    color: $primary;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    @media screen and (max-width:768px) {
+                        font-size: 28px;
+                    }
+                   
+                }
+
+                .exPara {
+                    text-align: center;
+                    font-size: 16px;
+                    color: $textColor;
+                    width: 65%;
+                    margin-inline: auto;
+                    margin-bottom: 60px;
+                    @media screen and (max-width:768px) {
+                        width: 100%;
+                        margin-bottom: 40px;
+                     
+                    }
+                    @media screen and (min-width:769px) and (max-width:992px) {
+                        width: 100%;
+                    }
+                }
+                .exCardsWrapper{
+                    .exCardsWrapp{
+                        display: grid;
+                        grid-template-columns: repeat(3,1fr);
+                        grid-gap: 20px;
+                        
+                        @media screen and (max-width:768px) {
+                            grid-template-columns: repeat(1, 1fr);
+                            grid-gap: 50px;
+                         
+                        }
+                
+                        @media screen and (min-width:769px) and (max-width:992px) {
+                            grid-template-columns:  repeat(1, 1fr);
+                            grid-gap: 30px;
+                           
+                        }
+                    }
+                }
+            }
+        }
+        .contactFormWrapp{
+            margin-top: 100px;
+        }
+    }
+}

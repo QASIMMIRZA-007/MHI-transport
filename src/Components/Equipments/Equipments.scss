@@ -1,33 +1,65 @@
 @import '../../Styles/variables';
-.EquipmentsWrapper{
-    .EquipmentsWrapp{
-        .minispan{
+
+.EquipmentsWrapper {
+    .EquipmentsWrapp {
+        .minispan {
             text-align: center;
         }
-        h1{
-            // width: 60%;
+
+        h1 {
+
             color: $primary;
             text-align: center;
             font-size: 36px;
             margin-bottom: 10px;
 
+            @media screen and (max-width:768px) {
+                font-size: 28px;
+
+            }
+
+
         }
-        .para{
-            
-            width: 55%;
+
+        .para {
+
+            width: 75%;
             margin-inline: auto;
-       text-align: center;
+            text-align: center;
             font-size: 16px;
             color: $textColor;
           
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+
+            }
+
+            @media screen and (min-width:769px) and (max-width:992px) {
+                width: 100%;
+            }
+
         }
-        .cardsWrapper{
-            display: flex;
-            // align-items: center;
-            gap: 50px;
-            // margin-top: 50px;
-            padding-top: 50px;
-            // border: 1px solid #000;
+
+        .cardsWrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            // grid-gap: 100px;
+            margin-top: 50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 100%;
+            overflow: hidden;
+            
+            @media screen and (max-width:768px) {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            @media screen and (min-width:769px) and (max-width:992px) {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
         }
 
     }

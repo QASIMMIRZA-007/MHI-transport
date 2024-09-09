@@ -33,6 +33,7 @@ const CardRow = () => {
         {propsItems.map((item) => {
           return (
             <Card
+              height="300px"
               key={item.id}
               svg={item.svg}
               title={item.title}

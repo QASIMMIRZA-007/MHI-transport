@@ -1,0 +1,260 @@
+@import '../../Styles/variables';
+
+.pricingWrapper {
+    margin-top: 50px;
+    width: 90%;
+    margin-inline: auto;
+
+    .pricingWrapp {
+        h1 {
+            text-align: center;
+            margin-bottom: 7px;
+        }
+
+        p {
+            color: $textColor;
+            font-size: 16px;
+            text-align: center;
+            width: 80%;
+            margin-inline: auto;
+            @media screen and (max-width:768px) {
+             
+                width: 100%;
+            }
+
+
+        }
+
+        .stepsLine {
+            margin-top: 50px;
+            width: 50%;
+            margin-inline: auto;
+            @media screen and (max-width:768px) {
+            flex-direction: row;
+            width: 70%;
+           
+            
+             
+            }
+            
+
+            .ant-steps-item-wait {
+                .ant-steps-item-icon {
+                    border: 1px solid #D2D2D2;
+                    background: #fff;
+                   
+                   
+                    // border-radius: 50%;
+                }
+            }
+
+
+
+            // .ant-steps-item-icon>.ant-steps-icon {
+            //     color: $textColor;
+            // }
+           
+
+            .ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title::after {
+                background: $primary;
+            }
+
+            // .ant-steps-item-icon {
+            //     background: $primary;
+            //     color: #fff !important;
+            // }
+.ant-steps-item-process {
+    .ant-steps-item-icon{
+        background: $primary;
+      
+    }
+}
+        }
+
+        .zeroStepWrapper{
+            margin: 100px 0 50px 0;
+            .zeroStepCards{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-content: start;
+                gap: 50px;
+                @media screen and (max-width:768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                
+                 
+                }
+        
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    grid-template-columns:  repeat(2, 1fr);
+                 
+                   
+                }
+                .zeroStepCard{
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    border-radius: 15px;
+                    padding: 30px 40px;
+                   
+                    h2{
+                        color: $primary;
+                        font-size: 20px;
+                    }
+                    p{
+                        color: $textColor;
+                        font-size: 16px;
+                        text-align: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .stepCardsWrapper {
+            margin: 100px 0 50px 0;
+
+            .stepCardsWrapp {
+
+
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 30px;
+
+                @media screen and (max-width:768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                
+                 
+                }
+        
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    grid-template-columns:  repeat(2, 1fr);
+                 
+                   
+                }
+
+
+                .stepCard {
+
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                    padding: 30px 0 30px 30px;
+                    border-radius: 15px;
+
+                    h2 {
+                        // text-align: center;
+                        padding-left: 50px;
+
+                    }
+
+                }
+            }
+        }
+
+        .secondStepWrapper{
+            .secondStepWrapp{
+                margin: 100px 0 50px 0;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 30px;
+
+                @media screen and (max-width:768px) {
+                    grid-template-columns: repeat(1, 1fr);
+                
+                 
+                }
+        
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    grid-template-columns:  repeat(2, 1fr);
+                 
+                   
+                }
+                .secondStepCard{
+                   
+        border-radius: 15px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                        position: relative;
+                        padding: 20px;
+                        .checkbox{
+                            position: absolute;
+                            right: 30px;
+                        }
+                        p{
+                            width: 100%;
+                            text-align: left;
+                        }
+                        h2{
+                            color: $primary;
+                            font-size: 24px;
+                        }
+                    
+                }
+            }
+        }
+        .forthStepWrapper{
+            margin: 100px 0 50px 0;
+            .forthStepWrapp{
+                .forthStep{
+
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 30px;
+
+@media screen and (max-width:768px) {
+    grid-template-columns: repeat(1, 1fr);
+
+ 
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    grid-template-columns:  repeat(2, 1fr);
+ 
+   
+}
+
+input{
+    // height: 60px;
+    padding: 20px 30px;
+    border: 1px solid #D2D2D2;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+                }
+                .mainFlex{
+                    margin: 20px 0;
+                   display: flex;
+                   flex-direction: column;
+                   gap: 10px;
+                
+
+                .flex{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    @media screen and (max-width:768px) {
+                    flex-direction: column;
+                    gap: 5px;
+                    align-items: start;
+                
+                 
+                    }
+                    
+                    @media screen and (min-width:769px) and (max-width:992px) {
+                     
+                       
+                    }
+                   
+                    p{
+                        text-align: left;
+                        // width: 100%;
+                        color: $primary;
+                    }
+                    h2{
+                        font-size: 18px;
+                        color: $primary;
+                    }
+                }
+            }
+            }
+        }
+
+    }
+}

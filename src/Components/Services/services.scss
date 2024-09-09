@@ -10,6 +10,13 @@
             color: $primary;
             text-align: center;
             font-size: 36px;
+            @media screen and (max-width:768px) {
+               font-size: 28px;
+            }
+          
+            // @media screen and (min-width:769px) and (max-width:992px) {
+            //     width: 100%;
+            // }
 
         }
         .cardWrapper{
@@ -20,9 +27,23 @@
             justify-content:center;
             gap: 80px;
             margin: 40px 0 100px 0;
+            @media screen and (max-width:768px) {
+                width: auto;
+                display: grid;
+                grid-template-columns: 1fr;  
+                gap: 20px;
+            }
+            @media screen and (min-width:769px) and (max-width:992px) {
+                width: auto;
+                display: grid;
+                grid-template-columns: 1fr;  
+                gap: 20px;
+            }
+
         .card{
        
             display: flex;
+            
             align-items: center;
             padding: 30px 20px;
             gap: 10px;
@@ -30,6 +51,16 @@
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             border-radius: 15px;
             width: 400px;
+            @media screen and (max-width:768px) {
+                width: auto;
+               
+             
+            }
+    
+            @media screen and (min-width:769px) and (max-width:992px) {
+                width: auto;
+            }
+            
             h2{
                 color: $textColor;
                 font-size: 20px;
@@ -44,6 +75,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            gap: 50px;
+           
+        }
+        @media screen and (min-width:769px) and (max-width:992px) {
+           flex-direction: column;
+           gap: 50px;
+        }
        
         .dispatcherTextWrapper{
             // width: 40%;
@@ -51,22 +92,43 @@
                 text-align: left;
             }
             h1{
-                width: 60%;
+                width: 80%;
                 color: $primary;
                 text-align: left;
                 font-size: 36px;
                 margin-bottom: 20px;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                    font-size: 28px;
+                }
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    width: 100%;
+                }
+
     
             }
             p{
-                width: 65%;
+                width: 85%;
                 font-size: 16px;
                 color: $textColor;
+                @media screen and (max-width:768px) {
+                    width: 100%;
+                }
+                @media screen and (min-width:769px) and (max-width:992px) {
+                    width: 100%;
+                }
             }
         }
         .dispatcherImgWrapper{
+
 svg{
     display: block;
+    // width: 100%;
+    @media screen and (max-width:768px) {
+        width: 100%;
+       
+     
+    }
 }
         }
     }

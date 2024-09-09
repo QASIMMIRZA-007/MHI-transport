@@ -1,12 +1,13 @@
 import "./header.scss";
 import React from "react";
 import { ReactSVG } from "react-svg";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import PrimaryButton from "../../UI/PrimaryButton/PrimaryButton";
 import { downVector, logo } from "../../assets/Index";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 function Header({ isNav, setIsNav }) {
   const handleLoginClick = () => {
     console.log("hello");
@@ -15,19 +16,25 @@ function Header({ isNav, setIsNav }) {
   const mobileResponsive = useMediaQuery({
     query: "(max-width: 992px)",
   });
-  const mediumScreen = useMediaQuery({
-    query: "(max-width: 992px)",
-  });
+
   const items = [
     {
-      label: <a style={{ fontSize: "16px" }}>Freight Dispatch </a>,
+      label: (
+        <Link to="/frieght-dispatch" style={{ fontSize: "16px" }}>
+          Freight Dispatch{" "}
+        </Link>
+      ),
       key: "0",
     },
     {
       type: "divider",
     },
     {
-      label: <a style={{ fontSize: "16px" }}>Freight Brokerage </a>,
+      label: (
+        <Link to="/frieght-brokerage" style={{ fontSize: "16px" }}>
+          Freight Brokerage{" "}
+        </Link>
+      ),
       key: "1",
     },
   ];
@@ -50,10 +57,12 @@ function Header({ isNav, setIsNav }) {
       <div id="open" className={isNav ? "open" : "list-button"}>
         <div className="nav-group">
           <ul>
-            <Link offset={-80} to="navigate" smooth duration={500}>
-              <li>Home</li>
+            <Link offset={-80} to="/" smooth duration={500}>
+              <li className={location.pathname === "/" ? "active" : ""}>
+                Home
+              </li>
             </Link>
-            <Link offset={-80} to="accordionContainer" smooth duration={500}>
+            <Link offset={-80} to="" smooth duration={500}>
               <Dropdown menu={{ items }} trigger={["click"]}>
                 <a onClick={(e) => e.preventDefault()}>
                   <Space>
@@ -67,21 +76,33 @@ function Header({ isNav, setIsNav }) {
               </Dropdown>
             </Link>
 
-            <Link offset={-70} to="aboutContainer" smooth duration={500}>
-              <li>Pricing</li>
+            <Link offset={-70} to="/pricing" smooth duration={500}>
+              <li className={location.pathname === "/pricing" ? "active" : ""}>
+                Pricing
+              </li>
             </Link>
-            <Link offset={-70} to="aboutContainer" smooth duration={500}>
-              <li>About us</li>
+            <Link offset={-70} to="/about" smooth duration={500}>
+              <li className={location.pathname === "/about" ? "active" : ""}>
+                About us
+              </li>
             </Link>
-            <Link offset={-80} to="accordionContainer" smooth duration={500}>
-              <li> FAQs</li>
+            <Link offset={-80} to="/FAQs" smooth duration={500}>
+              <li className={location.pathname === "/FAQs" ? "active" : ""}>
+                {" "}
+                FAQs
+              </li>
             </Link>
-            <Link offset={-80} to="contactForm" smooth duration={500}>
-              <li>Contact us</li>
+            <Link offset={-80} to="/contact" smooth duration={500}>
+              <li className={location.pathname === "/contact" ? "active" : ""}>
+                Contact us
+              </li>
             </Link>
 
-            {mobileResponsive && mediumScreen ? (
-              <PrimaryButton className="button" onClick={handleLoginClick}>
+            {mobileResponsive ? (
+              <PrimaryButton
+                className="button invisible"
+                onClick={handleLoginClick}
+              >
                 Get in Touch
               </PrimaryButton>
             ) : (
@@ -91,10 +112,10 @@ function Header({ isNav, setIsNav }) {
         </div>
       </div>
       <div>
-        {mobileResponsive && mediumScreen ? (
+        {mobileResponsive ? (
           " "
         ) : (
-          <PrimaryButton className="button" onClick={handleLoginClick}>
+          <PrimaryButton className="button " onClick={handleLoginClick}>
             Get in Touch
           </PrimaryButton>
         )}

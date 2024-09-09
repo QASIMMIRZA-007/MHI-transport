@@ -1,0 +1,86 @@
+@import '../../Styles/variables';
+
+.ContentDisplayWrapper{ 
+.ContentDisplayWrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 70px;
+    // padding: 170px 40px 70px 0;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column-reverse;
+        gap: 50px;
+        // padding-top: 100px;
+    }
+    @media screen and (min-width:769px) and (max-width:992px) {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+.imgWrapp {
+    display: block;
+    width: 40%;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:769px) and (max-width:992px) {
+        width: 100%;
+    }
+
+    svg {
+        width: 100%;
+       @media screen and (max-width:768px) {
+        width: 100%;
+    }
+    }
+}
+
+.textWrapp {
+    width: 60%;
+   
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:769px) and (max-width:992px) {
+        width: 100%;
+    }
+
+    h1 {
+        color: $primary;
+        font-size: 40px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width:768px) {
+            font-size: 30px;
+        }
+
+    }
+
+    p {
+        color: $textColor;
+        font-size: 16px;
+        width: 94%;
+      
+     
+       
+      
+
+
+        @media screen and (max-width:768px) {
+            width: 100%;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        @media screen and (min-width:769px) and (max-width:992px) {
+            width: 100%;
+        }
+    }
+}
+}
+}
