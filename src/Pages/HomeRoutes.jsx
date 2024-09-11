@@ -8,6 +8,7 @@ import FAQs from "./FAQs/FAQs";
 import About from "../Components/About/About";
 import Contact from "./Contact/Contact";
 import AboutPage from "./AboutPage/AboutPage";
+import OrderCompleteCard from "../UI/OrderCompleteCard/OrderCompleteCard";
 
 const HomeRoutes = () => {
   return (
@@ -21,6 +22,7 @@ const HomeRoutes = () => {
           <Route path="/FAQs" element={<FAQs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/order-complete" element={<OrderCompleteCard />} />
         </Route>
       </Routes>
     </div>

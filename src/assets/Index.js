@@ -36,6 +36,7 @@ export { default as svg5 } from './projectSvgs/5.svg';
 export { default as svg6 } from './projectSvgs/6.svg';
 export { default as svg7 } from './projectSvgs/7.svg';
 export { default as svg8 } from './projectSvgs/8.svg';
+export { default as newHome } from './projectSvgs/newhome.svg';
 export { default as person1 } from './projectSvgs/person1.svg';
 export { default as person2 } from './projectSvgs/person2.svg';
 export { default as person3 } from './projectSvgs/person3.svg';

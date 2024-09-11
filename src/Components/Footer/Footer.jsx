@@ -10,7 +10,7 @@ import {
 } from "../../assets/Index";
 import { Col, Row } from "antd";
 import { useMediaQuery } from "react-responsive";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   //   const navigate = useNavigate();   onClick={() => navigate("/")}
@@ -67,12 +67,12 @@ const Footer = () => {
           >
             <div className="colWrap">
               <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>About us</li>
-                <li>FAQs</li>
+                <Link to="/">Home</Link>
+                <Link>Services</Link>
+                <Link to="/about">About us</Link>
+                <Link to="/FQAs">FAQs</Link>
 
-                <li>About Us </li>
+                <Link to="/contact">Contact Us </Link>
               </ul>
             </div>
           </Col>

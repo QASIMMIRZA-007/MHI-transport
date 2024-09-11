@@ -1,0 +1,79 @@
+
+@import '../../Styles/variables';
+.order-complete {
+  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+
+  .order-card {
+    width: 100%;
+    max-width: 58rem;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    overflow: hidden;
+    border:  1px solid $primary;
+  }
+  
+  // Card content styling
+  .order-card-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  // Emoji styling
+  .order-emoji {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  // Title styling
+  .order-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: 0.5rem;
+  }
+  
+  // Message styling
+  .order-message {
+    color: #4a5568;
+    margin-bottom: 2rem;
+  }
+  .order-summary{
+
+    text-align: left;
+    margin-bottom: 10px;
+
+    h2{
+        color: $primary;
+    }
+    p{
+        margin-bottom: 6px;
+        // strong{
+        //     color: $primary;
+        // }
+
+    }
+  }
+  
+  // Button styling
+  .order-button {
+    background-color: $primary;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease-in-out;
+  border: none;
+  
+    &:hover {
+      background-color: #1976d2;
+      transform: scale(1.05);
+    }
+  }
+    

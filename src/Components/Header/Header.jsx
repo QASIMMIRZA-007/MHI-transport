@@ -7,10 +7,13 @@ import { downVector, logo } from "../../assets/Index";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 function Header({ isNav, setIsNav }) {
+  const navigate = useNavigate();
   const handleLoginClick = () => {
     console.log("hello");
+    navigate("/contact");
   };
 
   const mobileResponsive = useMediaQuery({
@@ -20,7 +23,11 @@ function Header({ isNav, setIsNav }) {
   const items = [
     {
       label: (
-        <Link to="/frieght-dispatch" style={{ fontSize: "16px" }}>
+        <Link
+          to="/frieght-dispatch"
+          style={{ fontSize: "16px" }}
+          onClick={() => setIsNav(false)}
+        >
           Freight Dispatch{" "}
         </Link>
       ),
@@ -31,7 +38,11 @@ function Header({ isNav, setIsNav }) {
     },
     {
       label: (
-        <Link to="/frieght-brokerage" style={{ fontSize: "16px" }}>
+        <Link
+          to="/frieght-brokerage"
+          style={{ fontSize: "16px" }}
+          onClick={() => setIsNav(false)}
+        >
           Freight Brokerage{" "}
         </Link>
       ),
@@ -57,12 +68,24 @@ function Header({ isNav, setIsNav }) {
       <div id="open" className={isNav ? "open" : "list-button"}>
         <div className="nav-group">
           <ul>
-            <Link offset={-80} to="/" smooth duration={500}>
+            <Link
+              offset={-80}
+              to="/"
+              smooth
+              duration={500}
+              onClick={() => setIsNav(false)}
+            >
               <li className={location.pathname === "/" ? "active" : ""}>
                 Home
               </li>
             </Link>
-            <Link offset={-80} to="" smooth duration={500}>
+            <Link
+              offset={-80}
+              to=""
+              smooth
+              duration={500}
+              // onClick={() => setIsNav(false)}
+            >
               <Dropdown menu={{ items }} trigger={["click"]}>
                 <a onClick={(e) => e.preventDefault()}>
                   <Space>
@@ -76,23 +99,47 @@ function Header({ isNav, setIsNav }) {
               </Dropdown>
             </Link>
 
-            <Link offset={-70} to="/pricing" smooth duration={500}>
+            <Link
+              offset={-70}
+              to="/pricing"
+              smooth
+              duration={500}
+              onClick={() => setIsNav(false)}
+            >
               <li className={location.pathname === "/pricing" ? "active" : ""}>
                 Pricing
               </li>
             </Link>
-            <Link offset={-70} to="/about" smooth duration={500}>
+            <Link
+              offset={-70}
+              to="/about"
+              smooth
+              duration={500}
+              onClick={() => setIsNav(false)}
+            >
               <li className={location.pathname === "/about" ? "active" : ""}>
                 About us
               </li>
             </Link>
-            <Link offset={-80} to="/FAQs" smooth duration={500}>
+            <Link
+              offset={-80}
+              to="/FAQs"
+              smooth
+              duration={500}
+              onClick={() => setIsNav(false)}
+            >
               <li className={location.pathname === "/FAQs" ? "active" : ""}>
                 {" "}
                 FAQs
               </li>
             </Link>
-            <Link offset={-80} to="/contact" smooth duration={500}>
+            <Link
+              offset={-80}
+              to="/contact"
+              smooth
+              duration={500}
+              onClick={() => setIsNav(false)}
+            >
               <li className={location.pathname === "/contact" ? "active" : ""}>
                 Contact us
               </li>

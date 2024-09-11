@@ -65,10 +65,18 @@
     @media screen and (min-width:769px) and (max-width:992px) {
         width: 100%;
     }
-    input{
+    .fieldWrapper{
+
         margin-bottom: 20px;
-        height: 60px;
-        border: 1px solid #D2D2D2;
+        input{
+            height: 60px;
+            border: 1px solid #D2D2D2;
+        }
+        .error{
+            margin-top: 5px;
+            margin-left: 5px;
+            color: red;
+        }
     }
     .conditionsWrapper{
         margin-top: 30px;
@@ -89,18 +97,26 @@
     }
 }
 }
+.buttonWrapper{ 
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
 button{
+   
     background: $primary;
     color: #fff;
     padding: 15px 30px;
     border: 1px solid $primary;
     // border-radius: 10px;
     font-size: 16px;
-   position: absolute;
-   right: 5%;
+//    position: absolute;
+//    right: 5%;
    font-weight: 500;
  
    transition: 0.5s all ease-in ;
+   margin-top: 20px;
+   
    &:hover{
     // border: 1px solid $primary;
     background: #fff;
@@ -115,7 +131,7 @@ button{
 }
   
 }
-
+}
 // .button {
 //     padding: 15px 25px;
 //     // border: unset;
