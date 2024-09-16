@@ -11,21 +11,9 @@ import {
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { ReactSVG } from "react-svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 const Pricing = () => {
-  // const [selectedCheckbox, setSelectedCheckbox] = useState({
-  //   id: null,
-  //   truckName: "",
-  // });
-
-  // const [selectedTruckType, setSelectedTruckType] = useState({
-  //   id: null,
-  //   truckType: "",
-  // });
-  // const [selectedTruckSize, setSelectedTruckSize] = useState({
-  //   id: null,
-  //   truckSize: "",
-  // });
+  const location = useLocation();
 
   const { token } = theme.useToken();
   const [current, setCurrent] = useState(0);
@@ -42,8 +30,8 @@ const Pricing = () => {
   const [formvalues, setformvalues] = useState();
 
   useEffect(() => {
-    console.log("formvalues55", formvalues);
-  }, []);
+    window.scrollTo(0, 0);
+  }, [current]);
 
   const secondStepData = [
     {
@@ -522,15 +510,7 @@ const Pricing = () => {
               Next
             </Button>
           )}
-          {/* {current === steps.length - 1 && (
-            <Button
-              type="primary"
-              style={{ background: "#287094" }}
-              onClick={doneClick}
-            >
-              Done
-            </Button>
-          )} */}
+
           {current > 0 && (
             <Button
               className={`${current === 3 ? "hide" : ""}`}
