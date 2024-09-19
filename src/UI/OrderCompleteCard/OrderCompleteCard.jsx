@@ -42,8 +42,20 @@ const OrderCompleteCard = () => {
                 <p>
                   <strong>Job Title:</strong> {payload.jobTitle}
                 </p>
-                <p>
+                {/* <p>
                   <strong>Truck Name:</strong> {payload.truckName}
+                </p> */}
+                <p>
+                  <strong>
+                    {Array.isArray(payload.truckName) &&
+                    payload.truckName?.length === 1
+                      ? "Truck Name: "
+                      : "Truck Names: "}
+                  </strong>
+                  {Array.isArray(payload.truckName) &&
+                  payload.truckName?.length > 0
+                    ? payload.truckName.join(", ")
+                    : "None"}
                 </p>
                 <p>
                   <strong>Truck Type:</strong> {payload.truckType}

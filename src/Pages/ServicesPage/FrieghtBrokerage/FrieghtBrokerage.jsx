@@ -61,7 +61,7 @@ const FrieghtBrokerage = () => {
     {
       id: 8,
       svg: svg8,
-      title: "Truck Load",
+      title: "Industry Solutions",
       para: "Cutting-edge logistics solutions designed for the specific challenges of your industry.",
     },
   ];

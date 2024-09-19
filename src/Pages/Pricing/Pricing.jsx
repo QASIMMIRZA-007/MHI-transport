@@ -24,8 +24,10 @@ const Pricing = () => {
     truckType: "",
     truckSizeID: null,
     truckSize: "",
-    truckName: "",
-    truckNameID: null,
+    // truckName: "",
+    // truckNameID: null,
+    truckNames: [],
+    truckNameIDs: [],
   });
   const [formvalues, setformvalues] = useState();
 
@@ -101,7 +103,7 @@ const Pricing = () => {
 
   const zeroStepCardData = [
     {
-      id: 0,
+      id: 1,
       svg: FDispatch,
       title: "Freight Dispatch",
       description: `  Our dispatch solutions for flatbed trucking cater to diverse
@@ -109,7 +111,7 @@ const Pricing = () => {
                 structures, ensuring versatility and adaptability for truckers`,
     },
     {
-      id: 1,
+      id: 2,
       svg: FBrokerage,
       title: "Freight Brokerage",
       description: `Our dispatch solutions for flatbed trucking cater to diverse load types, including industrial equipment and oversized structures, ensuring versatility and adaptability for truckers`,
@@ -126,18 +128,38 @@ const Pricing = () => {
     { id: 8, title: "30+" },
   ];
 
+  // const handleTruckNameSelection = (e, id) => {
+  //   if (e.target.checked) {
+  //     const selectedTruckName = secondStepData.find((item) => item.id === id);
+  //     if (selectedTruckName) {
+  //       setFormData((prev) => ({
+  //         ...prev,
+  //         truckNameID: id,
+  //         truckName: selectedTruckName.title,
+  //       }));
+  //     }
+  //   } else {
+  //     setSelectedCheckbox(null);
+  //   }
+  // };
+
   const handleTruckNameSelection = (e, id) => {
+    const selectedTruckName = secondStepData.find((item) => item.id === id);
+
     if (e.target.checked) {
-      const selectedTruckName = secondStepData.find((item) => item.id === id);
-      if (selectedTruckName) {
-        setFormData((prev) => ({
-          ...prev,
-          truckNameID: id,
-          truckName: selectedTruckName.title,
-        }));
-      }
+      setFormData((prev) => ({
+        ...prev,
+        truckNameIDs: [...prev.truckNameIDs, id],
+        truckNames: [...prev.truckNames, selectedTruckName.title],
+      }));
     } else {
-      setSelectedCheckbox(null);
+      setFormData((prev) => ({
+        ...prev,
+        truckNameIDs: prev.truckNameIDs.filter((nameId) => nameId !== id),
+        truckNames: prev.truckNames.filter(
+          (name) => name !== selectedTruckName.title
+        ),
+      }));
     }
   };
 
@@ -241,7 +263,8 @@ const Pricing = () => {
                 >
                   <Checkbox
                     className="checkbox"
-                    checked={formData.truckNameID === item.id}
+                    // checked={formData.truckNameID === item.id}
+                    checked={formData.truckNameIDs.includes(item.id)}
                     onChange={(e) => handleTruckNameSelection(e, item.id)}
                   />
                   <ReactSVG src={item.svg} />
@@ -278,7 +301,7 @@ const Pricing = () => {
 
               const payload = {
                 ...values,
-                truckName: formData.truckName,
+                truckName: formData.truckNames,
                 truckType: formData.truckType,
                 truckSize: formData.truckSize,
               };
@@ -400,7 +423,12 @@ const Pricing = () => {
                 <div className="mainFlex">
                   <div className="flex">
                     <h2>Truck Name:</h2>
-                    <p> {formData.truckName || "Tanker"}</p>
+                    {/* <p> {formData.truckName || "Tanker"}</p> */}
+                    <p>
+                      {formData.truckNames.length > 0
+                        ? formData.truckNames.join(", ")
+                        : "None"}
+                    </p>
                   </div>
                   <div className="flex">
                     <h2>Truck type:</h2>
@@ -463,7 +491,7 @@ const Pricing = () => {
       return;
     }
 
-    if (current === 2 && !formData.truckNameID) {
+    if (current === 2 && !formData.truckNameIDs) {
       message.error("Please select a truck name before proceeding.");
       return;
     }
