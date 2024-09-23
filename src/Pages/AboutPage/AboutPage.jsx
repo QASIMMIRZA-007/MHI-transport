@@ -61,21 +61,21 @@ const AboutPage = () => {
       id: 1,
       name: "S. Watkins",
       review:
-        "Swift Dispatch has been a game-changer for our logistics operations. Their meticulous attention to detail and efficient handling of all dispatch tasks have significantly reduced our operational costs. The seamless process and excellent support make them a standout choice in the industry. ",
+        "MHI Transport Dispatch has been a game-changer for our logistics operations. Their meticulous attention to detail and efficient handling of all dispatch tasks have significantly reduced our operational costs. The seamless process and excellent support make them a standout choice in the industry. ",
       svg: person1,
     },
     {
       id: 2,
       name: "Jenna M.",
       review:
-        "The service provided by Swift Dispatch has been exceptional. They take care of all our dispatch needs with efficiency and professionalism, allowing us to focus on growing our business. Their proactive approach and reliable results have made a noticeable difference in our operations. We are very satisfied.",
+        "The service provided by MHI Transport Dispatch has been exceptional. They take care of all our dispatch needs with efficiency and professionalism, allowing us to focus on growing our business. Their proactive approach and reliable results have made a noticeable difference in our operations. We are very satisfied.",
       svg: person2,
     },
     {
       id: 3,
       name: "Lisa H.",
       review:
-        "Swift Dispatch’s service has been outstanding from day one. They have streamlined our dispatch process, from load planning to real-time monitoring, making our operations more efficient. The team’s dedication and expertise ensure everything is handly seamlessly. We’re very pleased with the results. ",
+        "MHI Transport Dispatch’s service has been outstanding from day one. They have streamlined our dispatch process, from load planning to real-time monitoring, making our operations more efficient. The team’s dedication and expertise ensure everything is handly seamlessly. We’re very pleased with the results. ",
       svg: person3,
     },
   ];
@@ -87,7 +87,7 @@ const AboutPage = () => {
             paddingTop="10px"
             svg={frieghtDispatch}
             title="How We Are"
-            description1="Swift Dispatch was designed to simplify the dispatching process for owners. After encountering common industry challenges—like high operational costs and a lack of trained personnel—we saw the need for a reliable service to bridge the gap between trucking companies and the necessary technical resources."
+            description1="MHI Transport Dispatch was designed to simplify the dispatching process for owners. After encountering common industry challenges—like high operational costs and a lack of trained personnel—we saw the need for a reliable service to bridge the gap between trucking companies and the necessary technical resources."
             description2="We take care of all the technical and administrative tasks, letting clients focus on getting their loads on the road. Through thorough market analysis and efficient load planning, we ensure optimal dispatch durations and lucrative opportunities. From start to finish, our service guarantees a seamless and stress-free dispatch experience"
             miniSpan=""
           />
@@ -126,9 +126,9 @@ const AboutPage = () => {
         <ContentDisplay
           title="What Defines Us"
           description={
-            "Swift Dispatch Services specializes in truck dispatch, providing efficient truck dispatching services to carriers and owner-operators across the United States. Our dedicated team of specialized dispatchers excels at booking optimal loads for drivers based on their preferences. Through our years of experience, we have cultivated strong relationships with the top brokers in America, allowing us to secure loads even before they are listed on load boards. Your success is our priority." +
+            "MHI Transport Dispatch Services specializes in truck dispatch, providing efficient truck dispatching services to carriers and owner-operators across the United Arab Emirates. Our dedicated team of specialized dispatchers excels at booking optimal loads for drivers based on their preferences. Through our years of experience, we have cultivated strong relationships with the top brokers in America, allowing us to secure loads even before they are listed on load boards. Your success is our priority." +
             "<br />" +
-            "Swift Dispatch Services excels in dispatching various types of trucks, including box trucks, hotshots, power-only units, dry vans, reefers, and flatbeds. Our unique blend of experience, exceptional service, and cutting-edge technology enables us to deliver dispatch services that not only ensure high reliability but also remain incredibly cost-effective. Trust us to optimize your trucking operations."
+            "MHI Transport Dispatch Services excels in dispatching various types of trucks, including box trucks, hotshots, power-only units, dry vans, reefers, and flatbeds. Our unique blend of experience, exceptional service, and cutting-edge technology enables us to deliver dispatch services that not only ensure high reliability but also remain incredibly cost-effective. Trust us to optimize your trucking operations."
           }
           svg={newSvg}
           isSvgFirst={false}

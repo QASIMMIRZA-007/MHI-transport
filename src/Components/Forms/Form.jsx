@@ -40,7 +40,7 @@
 //     {
 //       id: 2,
 //       svg: emailVec,
-//       description: "swiftsystem@gmail.com",
+//       description: "MHI Transportsystem@gmail.com",
 //     },
 //     {
 //       id: 3,
@@ -143,7 +143,7 @@
 //             <div className="conditionsWrapper">
 //               <p>
 //                 By checking the box, you are providing your express consent for{" "}
-//                 <b>  SWIFT DISPATCH SERVICES </b> to send you communications,
+//                 <b>  MHI Transport DISPATCH SERVICES </b> to send you communications,
 //                 including but not limited to text messages and email, to the
 //                 contact details you have provided. These communications may
 //                 include updates, promotional offers, and other information
@@ -153,13 +153,13 @@
 //                 <Checkbox onChange={handleCheckBoxChange} />
 //                 <p>
 //                   <b>
-//                     Yes, I agree to receive emails from SWIFT DISPATCH SERVICES.
+//                     Yes, I agree to receive emails from MHI Transport DISPATCH SERVICES.
 //                   </b>
 //                 </p>
 //               </div>
 //               <p>
 //                 By providing your phone number, you consent to receive SMS
-//                 messages from <b> SWIFT DISPATCH SERVICES </b>  and its
+//                 messages from <b> MHI Transport DISPATCH SERVICES </b>  and its
 //                 employees for informational and marketing purposes. Message
 //                 frequency may vary. Standard message and data rates may apply.
 //                 Reply
@@ -169,7 +169,7 @@
 //                 <Checkbox onChange={handleCheckBoxChange} />
 //                 <p>
 //                   <b>
-//                     Yes, I agree to receive text messages from SWIFT DISPATCH
+//                     Yes, I agree to receive text messages from MHI Transport DISPATCH
 //                     SERVICES.
 //                   </b>
 //                 </p>
@@ -231,7 +231,7 @@ const Form = ({ conditionShown }) => {
     {
       id: 2,
       svg: emailVec,
-      description: "swiftsystem@gmail.com",
+      description: "MHI Transportsystem@gmail.com",
     },
     {
       id: 3,
@@ -342,13 +342,13 @@ const Form = ({ conditionShown }) => {
             <div className="conditionsWrapper">
               <p>
                 By checking the box, you are providing your express consent for
-                <b>  SWIFT DISPATCH SERVICES </b> to send you communications...
+                <b>  MHI Transport DISPATCH SERVICES </b> to send you communications...
               </p>
               <div className="flex">
                 <Checkbox onChange={handleCheckBoxChange} />
                 <p>
                   <b>
-                    Yes, I agree to receive emails from SWIFT DISPATCH SERVICES.
+                    Yes, I agree to receive emails from MHI Transport DISPATCH SERVICES.
                   </b>
                 </p>
               </div>
@@ -360,7 +360,7 @@ const Form = ({ conditionShown }) => {
                 <Checkbox onChange={handleCheckBoxChange} />
                 <p>
                   <b>
-                    Yes, I agree to receive text messages from SWIFT DISPATCH
+                    Yes, I agree to receive text messages from MHI Transport DISPATCH
                     SERVICES.
                   </b>
                 </p>

@@ -36,7 +36,7 @@ const Equipments = () => {
       svg: reefer,
       title: "Reefer",
       description:
-        "Reefer trucking is vital for temperature-sensitive goods, with Swift Dispatch Services leading in efficiency and reliability.",
+        "Reefer trucking is vital for temperature-sensitive goods, with MHI Transport Dispatch Services leading in efficiency and reliability.",
     },
     {
       id: 3,

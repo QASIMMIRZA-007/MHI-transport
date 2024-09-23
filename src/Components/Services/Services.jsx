@@ -50,7 +50,7 @@ const Services = () => {
         </div>
         <div className="dispatcherWrapper">
           <div className="dispatcherTextWrapper">
-            <div className="minispan">WHY SWIFT? </div>
+            <div className="minispan">WHY MHI Transport? </div>
             <h1>The Strategic Importance of Hiring a Dispatcher</h1>
             <p>
               Transportation and logistics companies are the backbone of the

@@ -58,7 +58,7 @@ const FrieghtDispatch = () => {
       svg: paperwork,
       title: "Paperwork",
       description:
-        "At Swift Dispatch Services, our experienced dispatchers handle all essential paperwork carrier setup, rate confirmations, invoicing, and insurance, so you can focus on the road.",
+        "At MHI Transport Dispatch Services, our experienced dispatchers handle all essential paperwork carrier setup, rate confirmations, invoicing, and insurance, so you can focus on the road.",
     },
     {
       id: 2,
@@ -110,9 +110,10 @@ const FrieghtDispatch = () => {
           <div className="workflowWrapp">
             <h1 className="">Dispatch Workflow</h1>
             <p className="para">
-              In the dynamic world of Truck Dispatch, Swift Dispatch stands out
-              for adaptability and efficiency. We constantly evolve our
-              Dispatching Services to meet industry trends and best practices.
+              In the dynamic world of Truck Dispatch, MHI Transport Dispatch
+              stands out for adaptability and efficiency. We constantly evolve
+              our Dispatching Services to meet industry trends and best
+              practices.
             </p>
             <div className="stepWrapp">
               {stepData.map((item) => {
@@ -133,9 +134,10 @@ const FrieghtDispatch = () => {
           <div className="exServicesWrapp">
             <h1>We Offer Excellence in Services</h1>
             <p className="exPara">
-              In the dynamic world of Truck Dispatch, Swift Dispatch stands out
-              for adaptability and efficiency. We constantly evolve our
-              Dispatching Services to meet industry trends and best practices.
+              In the dynamic world of Truck Dispatch, MHI Transport Dispatch
+              stands out for adaptability and efficiency. We constantly evolve
+              our Dispatching Services to meet industry trends and best
+              practices.
             </p>
             <div className="exCardsWrapper">
               <div className="exCardsWrapp">

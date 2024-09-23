@@ -13,7 +13,7 @@ const Home = () => {
       <div className="homeWrapp">
         <div className="textWrapp">
           <h1 className="mainHeading">
-            The premier truck dispatching service in the United States.
+            The premier truck dispatching service in the United Arab Emirates.
           </h1>
           <p>
             For years, we've partnered with experts to ensure seamless truck

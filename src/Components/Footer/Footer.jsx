@@ -35,10 +35,10 @@ const Footer = () => {
                 <ReactSVG src={footerLogo} />
               </div>
               <p>
-                As the premier truck dispatching service in the United States,
-                we excel in delivering top-notch logistics solutions. Our
-                commitment to reliability and efficiency makes us the trusted
-                partner for businesses nationwide
+                As the premier truck dispatching service in the
+                United Arab Emirates, we excel in delivering top-notch logistics
+                solutions. Our commitment to reliability and efficiency makes us
+                the trusted partner for businesses nationwide
               </p>
               <div className="iconsWrapp">
                 <ReactSVG src={instaVector} />

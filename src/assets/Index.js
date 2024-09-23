@@ -1,4 +1,5 @@
 export { default as logo } from './projectSvgs/swift.svg';
+// export { default as logo } from './projectSvgs/logo2.svg';
 export { default as homeSvg } from './projectSvgs/home.svg';
 export { default as downVector } from './projectSvgs/downVector.svg';
 export { default as about } from './projectSvgs/about.svg';

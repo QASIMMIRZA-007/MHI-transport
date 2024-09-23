@@ -10,7 +10,7 @@ const CardRow = () => {
       svg: synergy,
       title: "Synergy ",
       description:
-        "At Swift Dispatch Services, we are committed to being the best truck dispatching service in the industry. We firmly believe in harnessing our collective resources and expertise to generate unparalleled levels of efficacy, value, and performance for our esteemed clients. Your success is our mission.",
+        "At MHI Transport Dispatch Services, we are committed to being the best truck dispatching service in the industry. We firmly believe in harnessing our collective resources and expertise to generate unparalleled levels of efficacy, value, and performance for our esteemed clients. Your success is our mission.",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const CardRow = () => {
       svg: Reliability,
       title: "Reliability ",
       description:
-        "We deeply value the trust that our clients place in us, and we are committed to operating with the utmost integrity. Our mission is to provide the most dependable and efficient truck dispatch service across the United States, ensuring that our clients can always count on us to deliver exceptional results",
+        "We deeply value the trust that our clients place in us, and we are committed to operating with the utmost integrity. Our mission is to provide the most dependable and efficient truck dispatch service across the United Arab Emirates, ensuring that our clients can always count on us to deliver exceptional results",
     },
   ];
   return (

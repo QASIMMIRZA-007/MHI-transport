@@ -79,9 +79,9 @@ const FrieghtBrokerage = () => {
         <div className="solutionsWrapp">
           <h1 className="mainHeading">Our Logistics Solutions</h1>
           <p className="para">
-            Swift is more than a third-party logistics (3PL) company. We’re a
-            strategic partner with a full-suite of best-in-class transportation
-            services and logistics solutions.
+            MHI Transport is more than a third-party logistics (3PL) company.
+            We’re a strategic partner with a full-suite of best-in-class
+            transportation services and logistics solutions.
           </p>
           <div className="cardsWrap">
             {cardData.map((item) => {

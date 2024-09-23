@@ -7,15 +7,15 @@ const About = ({
   svg = about,
   miniSpan = "About",
   title = "Truck Dispatching Service",
-  description1 = `The Company Swift Dispatch Services specializes in truck dispatch,
+  description1 = `The Company MHI Transport Dispatch Services specializes in truck dispatch,
             providing efficient truck dispatching services to carriers and
-            owner-operators across the United States. Our dedicated team of
+            owner-operators across the United Arab Emirates. Our dedicated team of
             specialized dispatchers excels at booking optimal loads for drivers
             based on their preferences. Through our years of experience, we have
             cultivated strong relationships with the top brokers in America,
             allowing us to secure loads even before they are listed on load
             boards. Your success is our priority.`,
-  description2 = ` Swift Dispatch Services excels in dispatching various types of
+  description2 = ` MHI Transport Dispatch Services excels in dispatching various types of
             trucks, including box trucks, hotshots, power-only units, dry vans,
             reefers, and flatbeds. Our unique blend of experience, exceptional
             service, and cutting-edge technology enables us to deliver dispatch
