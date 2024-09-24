@@ -3,10 +3,13 @@ import "./home.scss";
 import { ReactSVG } from "react-svg";
 import { homeSvg } from "../../assets/Index";
 import PrimaryButton from "../../UI/PrimaryButton/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const handleOnClick = () => {
-    console.log("object");
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    console.log("hello");
+    navigate("/contact");
   };
   return (
     <div className="homeWrapper">
@@ -19,7 +22,10 @@ const Home = () => {
             For years, we've partnered with experts to ensure seamless truck
             dispatch.
           </p>
-          <PrimaryButton onClick={handleOnClick}> Get in Touch</PrimaryButton>
+          <PrimaryButton onClick={handleLoginClick}>
+            {" "}
+            Get in Touch
+          </PrimaryButton>
         </div>
         <div className="imgWrapp">
           <img src={homeSvg} />

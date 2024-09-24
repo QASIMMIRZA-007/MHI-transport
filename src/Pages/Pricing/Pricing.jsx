@@ -529,16 +529,6 @@ const Pricing = () => {
             marginTop: 24,
           }}
         >
-          {current < steps.length - 1 && (
-            <Button
-              style={{ background: "#045CB4" }}
-              type="primary"
-              onClick={next}
-            >
-              Next
-            </Button>
-          )}
-
           {current > 0 && (
             <Button
               className={`${current === 3 ? "hide" : ""}`}
@@ -548,6 +538,16 @@ const Pricing = () => {
               onClick={() => prev()}
             >
               Previous
+            </Button>
+          )}
+
+          {current < steps.length - 1 && (
+            <Button
+              style={{ background: "#045CB4" }}
+              type="primary"
+              onClick={next}
+            >
+              Next
             </Button>
           )}
         </div>
