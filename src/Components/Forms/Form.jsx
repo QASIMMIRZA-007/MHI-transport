@@ -226,17 +226,17 @@ const Form = ({ conditionShown }) => {
     {
       id: 1,
       svg: phoneVector,
-      description: "+1 765 390 2387",
+      description: "0553147903",
     },
     {
       id: 2,
       svg: emailVec,
-      description: "MHI Transportsystem@gmail.com",
+      description: "honeyiub@gmail.com",
     },
     {
       id: 3,
       svg: clockVec,
-      description: "Mon - Fri-0700-1600 Central Time",
+      description: "Dubai United Arab Emirates",
     },
   ];
 
@@ -342,13 +342,15 @@ const Form = ({ conditionShown }) => {
             <div className="conditionsWrapper">
               <p>
                 By checking the box, you are providing your express consent for
-                <b>  MHI Transport DISPATCH SERVICES </b> to send you communications...
+                <b>  MHI Transport DISPATCH SERVICES </b> to send you
+                communications...
               </p>
               <div className="flex">
                 <Checkbox onChange={handleCheckBoxChange} />
                 <p>
                   <b>
-                    Yes, I agree to receive emails from MHI Transport DISPATCH SERVICES.
+                    Yes, I agree to receive emails from MHI Transport DISPATCH
+                    SERVICES.
                   </b>
                 </p>
               </div>
@@ -360,8 +362,8 @@ const Form = ({ conditionShown }) => {
                 <Checkbox onChange={handleCheckBoxChange} />
                 <p>
                   <b>
-                    Yes, I agree to receive text messages from MHI Transport DISPATCH
-                    SERVICES.
+                    Yes, I agree to receive text messages from MHI Transport
+                    DISPATCH SERVICES.
                   </b>
                 </p>
               </div>

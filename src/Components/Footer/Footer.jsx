@@ -40,14 +40,9 @@ const Footer = () => {
                 solutions. Our commitment to reliability and efficiency makes us
                 the trusted partner for businesses nationwide
               </p>
-              <div className="iconsWrapp">
-                <ReactSVG src={instaVector} />
-                <ReactSVG src={fbVector} />
-                <ReactSVG src={linkedInVector} />
-              </div>
             </div>
           </Col>
-          <Col
+          {/* <Col
             span={mobileResponsive ? 24 : mediumScreen ? 8 : 5}
             className="colWrapper"
           >
@@ -60,7 +55,7 @@ const Footer = () => {
                 <li>Privacy Policy</li>
               </ul>
             </div>
-          </Col>
+          </Col> */}
           <Col
             span={mobileResponsive ? 12 : mediumScreen ? 8 : 5}
             className="colWrapper"

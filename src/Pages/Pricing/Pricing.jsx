@@ -531,7 +531,7 @@ const Pricing = () => {
         >
           {current < steps.length - 1 && (
             <Button
-              style={{ background: "#287094" }}
+              style={{ background: "#045CB4" }}
               type="primary"
               onClick={next}
             >
