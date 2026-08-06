@@ -16,7 +16,7 @@ A Vite-powered frontend for the MHI Transport experience.
 
 - `index.html`: entry HTML.
 - `src/`: application source code.
-- `public/`: static assets served as-is.
+- `public/`: static assets served as-is. ok
 ## Environment
 
 - Node.js 18+ recommended.
